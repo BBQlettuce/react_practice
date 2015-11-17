@@ -13,6 +13,17 @@
         React.createElement('div', {}, 'Hello from React!'),
         document.getElementById('my-component')
       );
+
+      var ClickCounter = React.createClass({
+        render: function() {
+          return (React.createElement('button', {}, 'CLICK ME'));
+        }
+      });
+
+      React.render(
+        React.createElement(ClickCounter, {}, ""),
+        document.getElementById('button-component')
+      );
     </script>
   </body>
 </html>
